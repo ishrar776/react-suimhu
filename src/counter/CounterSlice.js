@@ -23,8 +23,17 @@ export const counterSlice = createSlice({
     enterName: (state) => {
       state.candidateName = 'Zindgi muskil hai';
     },
+    enterByUser: (state, action) => {
+      state.candidateName += action.payload;
+    },
   },
 });
-export const { increment, decrement, reset, incrementByAmount, enterName } =
-  counterSlice.actions;
+export const {
+  increment,
+  decrement,
+  reset,
+  incrementByAmount,
+  enterName,
+  enterByUser,
+} = counterSlice.actions;
 export default counterSlice.reducer;
