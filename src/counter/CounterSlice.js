@@ -17,11 +17,11 @@ export const counterSlice = createSlice({
     reset: (state) => {
       state.count = 0;
     },
-    enterName: (state) => {
-      state.candidateName = 'Zindgi muskil hai';
-    },
     incrementByAmount: (state, action) => {
       state.count += action.payload;
+    },
+    enterName: (state) => {
+      state.candidateName = 'Zindgi muskil hai';
     },
   },
 });
