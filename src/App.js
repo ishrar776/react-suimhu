@@ -1,10 +1,11 @@
 import React from 'react';
-//import Counter from './counter/Counter';
 import DemoCounter from './counter/DemoCounter';
+import Child from './Child';
 function App() {
   return (
     <main className="App">
       <DemoCounter />
+      <Child />
     </main>
   );
 }
