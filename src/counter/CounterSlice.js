@@ -24,7 +24,7 @@ export const counterSlice = createSlice({
       state.candidateName = 'Zindgi muskil hai';
     },
     enterByUser: (state, action) => {
-      state.candidateName += action.payload;
+      state.candidateName = action.payload;
     },
   },
 });
