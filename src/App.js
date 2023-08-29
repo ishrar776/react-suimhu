@@ -6,7 +6,7 @@ import Child from './Child';
 function App() {
   return (
     <main className="App">
-      {/* <AddPostForm /> */}
+      <AddPostForm />
       <PostsList />
       {/* <DemoCounter />
       <Child /> */}
