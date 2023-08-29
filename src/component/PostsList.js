@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectAllPosts } from '../reducer/postSlice';
 import PostAuthor from '../component/PostAuthor';
