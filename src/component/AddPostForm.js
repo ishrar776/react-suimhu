@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { postAdded } from '../reducer/postSlice';
 //import { selectAllUsers } from '../reducer/usersSlice';
@@ -26,11 +26,11 @@ const AddPostForm = () => {
 
   const canSave = Boolean(title) && Boolean(content) && Boolean(userId);
 
-  const usersOptions = users.map((user) => (
-    <option key={user.id} value={user.id}>
-      {user.name}
-    </option>
-  ));
+  // const usersOptions = users.map((user) => (
+  //   <option key={user.id} value={user.id}>
+  //     {user.name}
+  //   </option>
+  // ));
 
   return (
     <section>
@@ -47,7 +47,7 @@ const AddPostForm = () => {
         <label htmlFor="postAuthor">Author:</label>
         <select id="postAuthor" value={userId} onChange={onAuthorChanged}>
           <option value=""></option>
-          {usersOptions}
+          {/* {usersOptions} */} select
         </select>
         <label htmlFor="postContent">Content:</label>
         <textarea

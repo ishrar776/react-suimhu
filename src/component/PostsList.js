@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import { selectAllPosts } from '../reducer/postSlice';
-import PostAuthor from './PostAuthor';
-import TimeAgo from './TimeAgo';
-import ReactionButtons from './ReactionButtons';
+import PostAuthor from '../component/PostAuthor';
+import TimeAgo from '../component/TimeAgo';
+import ReactionButtons from '../component/ReactionButtons';
 const PostsList = () => {
   const posts = useSelector(selectAllPosts);
   const orderedPosts = posts
