@@ -55,13 +55,13 @@ const postsSlice = createSlice({
         };
       },
     },
-    // reactionAdded(state, action) {
-    //   const { postId, reaction } = action.payload;
-    //   const existingPost = state.find((post) => post.id === postId);
-    //   if (existingPost) {
-    //     existingPost.reactions[reaction]++;
-    //   }
-    // },
+    reactionAdded(state, action) {
+      const { postId, reaction } = action.payload;
+      const existingPost = state.find((post) => post.id === postId);
+      if (existingPost) {
+        existingPost.reactions[reaction]++;
+      }
+    },
   },
 });
 export const selectAllPosts = (state) => state.posts;
