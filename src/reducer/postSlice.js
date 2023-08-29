@@ -62,7 +62,7 @@ const postsSlice = createSlice({
         existingPost.reactions[reaction]++;
       }
     },
-  },
+  }, 
 });
 export const selectAllPosts = (state) => state.posts;
 export const { postAdded, reactionAdded } = postsSlice.actions;
