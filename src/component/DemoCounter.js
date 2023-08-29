@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { reset, enterByUser } from './CounterSlice';
+import { reset, enterByUser } from '../reducer/CounterSlice';
 const DemoCounter = () => {
   const [firstName, SetFirstName] = useState('');
   const displayMessage = useSelector((item) => item.counter1.candidateName);
