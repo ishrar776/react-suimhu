@@ -8,8 +8,8 @@ function App() {
     <main className="App">
       <AddPostForm />
       <PostsList />
-      <DemoCounter />
-      <Child />
+      {/* <DemoCounter />
+      <Child /> */}
     </main>
   );
 }
