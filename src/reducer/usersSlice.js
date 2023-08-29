@@ -10,4 +10,5 @@ const usersSlice = createSlice({
   reducers: {},
 });
 export const selectAllUsers = (state) => state.users;
+//above users is from store reducer name and can access directly
 export default usersSlice.reducer;
