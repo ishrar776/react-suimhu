@@ -7,7 +7,7 @@ function App() {
   return (
     <main className="App">
       <AddPostForm />
-      <PostsList />
+      {/* <PostsList /> */}
       <DemoCounter />
       <Child />
     </main>
